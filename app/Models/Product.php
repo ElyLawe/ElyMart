@@ -2,13 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
     use HasFactory;
-
+    
     protected $fillable = [
         'barcode',
         'name',
@@ -16,4 +15,5 @@ class Product extends Model
         'cost_price',
         'stock',
     ];
+    
 }
